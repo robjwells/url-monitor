@@ -20,7 +20,7 @@ curl -s --output "$OUTDIR$OUTFN" "$1"
 
 # If there aren't enough files to compare, exit early (successfully)
 # This is useful when running the script for the first time
-if (( $(ls -1 html-source | wc -l) < 2 )); then
+if (( $(ls -1 $OUTDIR | wc -l) < 2 )); then
 	exit 0
 fi
 
@@ -28,7 +28,7 @@ fi
 # Here we find all the source files sharing a basename, sort
 # newest-first, pick the top two, then sort oldest-first
 # so that they're in order for diff
-INPUT_FILES=$(find html-source -type f -name "$BASE*" | sort -r | head -n 2 | sort)
+INPUT_FILES=$(find $OUTDIR -type f -name "$BASE*" | sort -r | head -n 2 | sort)
 
 # Save a unified diff of the two most recent input files
 diff -u $INPUT_FILES > "$DIFFDIR$OUTFN.patch"

@@ -7,7 +7,7 @@ This is a little shell script that monitors a web page for changes.
 
 You'll want to set it up to run regularly (use `cron`, or `launchd`
 via [Lingon](https://www.peterborgapps.com/lingon/) or
-[LaunchControl] (http://www.soma-zone.com/LaunchControl/) on macOS).
+[LaunchControl](http://www.soma-zone.com/LaunchControl/) on macOS).
 
 It only checks the HTML of the page. If the HTML is different from
 the last time it checked, it saves a copy (into HTMLDIR) and stores

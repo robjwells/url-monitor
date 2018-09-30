@@ -4,7 +4,7 @@
 # -o pipefail exits on pipe errors
 set -euo pipefail
 
-if (( $# == 0 )); then
+if (( $# < 3 )); then
 	echo usage: url html-dir diff-dir
 	exit 1
 fi

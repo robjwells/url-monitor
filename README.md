@@ -15,4 +15,7 @@ a patch file (from `diff -u`) into a separate folder (`DIFFDIR`).
 
 You can then rig something up to act on the patch files as they
 appear. I use [Hazel](https://www.noodlesoft.com) to send me a
-notification and add a task to OmniFocus (see the sample AppleScript).
+notification and add a task to [OmniFocus][] (see the sample
+AppleScript).
+
+[OmniFocus]: https://www.omnigroup.com/omnifocus

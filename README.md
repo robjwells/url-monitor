@@ -11,7 +11,7 @@ via [Lingon](https://www.peterborgapps.com/lingon/) or
 
 It only checks the HTML of the page. If the HTML is different from
 the last time it checked, it saves a copy (into HTMLDIR) and stores
-a patch file (from diff -u) into a separate folder (DIFFDIR).
+a patch file (from `diff -u`) into a separate folder (DIFFDIR).
 
 You can then rig something up to act on the patch files as they
 appear. I use [Hazel](https://www.noodlesoft.com) to send me a

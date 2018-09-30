@@ -10,8 +10,8 @@ if (( $# == 0 )); then
 fi
 
 # Directory and filename variables
-OUTDIR="$2"
-DIFFDIR="$3"
+OUTDIR="$2/"
+DIFFDIR="$3/"
 BASE="$(basename $1)"
 OUTFN="$BASE-$(date +'%Y%m%dT%H%M%S')"
 
